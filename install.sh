@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
-    echo
+    echo ""
     echo "**********************************************"
     echo "Not running as root, please run this script with root rights!"
     echo "**********************************************"
-    echo
+    echo ""
     exit 1
 fi
 
@@ -17,8 +17,8 @@ wget https://raw.githubusercontent.com/szalewicz/RasPiTimelapse/master/create_ti
 chmod +x take_photo.sh 
 chmod +x create_timelapse.sh
 
-echo
+echo ""
 echo "**********************************************"
 echo "Done, you can now start taking pictures manually or install a cron job"
 echo "**********************************************"
-echo 
+echo ""

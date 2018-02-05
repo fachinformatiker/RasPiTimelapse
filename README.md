@@ -51,13 +51,13 @@ and add the following two lines at the end of the file
 
 > */1 7-20 * * 1-5 /opt/RasPiTimelapse/take_photo.sh
 > 
-> 10 21 * * 1-5 /opt/RasPiTimelapse/create_timelapse.sh
+> 10 20 * * 1-5 /opt/RasPiTimelapse/create_timelapse.sh
 
 Short explanation:
 
 > */1 7-20 * * 1-5 -> At every minute between 7 A.M. and 8 P.M. on every day-of-week from Monday till Friday
 > 
-> 10 21 * * 1-5 -> At 21:10 on every day-of-week from Monday till Friday
+> 10 20 * * 1-5 -> At 20:10 on every day-of-week from Monday till Friday
 
 
 Now your Pi will be taking a picture every Minute between 7 A.M. and 8 P.M. and storing it to your /home/pi/RasPiTimelapse folder
